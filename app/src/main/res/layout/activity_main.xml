@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.MainActivity">
+    <View
+        android:id="@+id/colorview"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@color/orange"
+        />
+    <View
+        android:id="@+id/waveview"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_below="@id/colorview"
+        android:background="@drawable/ic_wave"
+        />
+    <ImageView
+    android:id="@+id/personimg"
+    android:layout_width="match_parent"
+    android:layout_height="150dp"
+    android:src="@drawable/ic_person"
+    android:layout_marginTop="50dp"
+    />
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/txtinptlt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/waveview">
+        <EditText
+            android:id="@+id/edtusername"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Username"
+            android:paddingLeft="10sp"
+            android:paddingRight="10sp"
+            android:paddingTop="10sp"
+            android:paddingBottom="10sp"
+            android:textSize="20sp"
+            android:fontFamily="sans-serif-thin"
+            android:inputType="text"
+            android:drawableLeft="@drawable/ic_email"
+            android:drawableTint="@color/black"
+            android:drawablePadding="10dp"
+            android:background="@drawable/shape_of_inputedt"
+            android:textColorHint="#4A4747"
+            android:textColor="@color/black"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/txtinptlt2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtinptlt">
+
+        <EditText
+            android:id="@+id/edtpass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Password"
+            android:paddingLeft="10sp"
+            android:paddingRight="10sp"
+            android:paddingTop="10sp"
+            android:paddingBottom="10sp"
+            android:textSize="20sp"
+            android:fontFamily="sans-serif-thin"
+            android:inputType="textPassword"
+            android:drawableLeft="@drawable/ic_lock"
+            android:drawableTint="@color/black"
+            android:drawablePadding="10dp"
+            android:background="@drawable/shape_of_inputedt"
+            android:textColorHint="#4A4747"
+            android:textColor="@color/black"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <Button
+        android:id="@+id/loginbtn"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:fontFamily="sans-serif-black"
+        android:textSize="25sp"
+        android:layout_centerInParent="true"
+        android:background="@drawable/shape_of_splashtext"
+        android:layout_below="@id/txtinptlt2"
+        android:layout_marginTop="50dp"
+        />
+    <TextView
+        android:id="@+id/txtor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="or"
+        android:textSize="25sp"
+        android:fontFamily="sans-serif-black"
+        android:textColor="@color/black"
+        android:layout_below="@id/loginbtn"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        />
+
+    <TextView
+        android:id="@+id/txtregister"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Don't have an account?
+                            Click Here to Register"
+        android:textSize="25sp"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:textColor="@color/orange"
+        android:layout_below="@id/txtor"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        />
+
+</RelativeLayout>

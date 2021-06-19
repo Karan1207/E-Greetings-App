@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.register">
+
+    <View
+        android:id="@+id/colorview1"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@color/orange"
+        />
+    <View
+        android:id="@+id/waveview1"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_below="@id/colorview1"
+        android:background="@drawable/ic_wave"
+        />
+    <ImageView
+        android:id="@+id/personimg1"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:src="@drawable/ic_person"
+        android:layout_marginTop="50dp"
+        />
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/txtinptlt1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/waveview1">
+        <EditText
+            android:id="@+id/edtusername1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Username"
+            android:paddingLeft="10sp"
+            android:paddingRight="10sp"
+            android:paddingTop="10sp"
+            android:paddingBottom="10sp"
+            android:textSize="20sp"
+            android:fontFamily="sans-serif-thin"
+            android:inputType="text"
+            android:drawableLeft="@drawable/ic_email"
+            android:drawableTint="@color/black"
+            android:drawablePadding="10dp"
+            android:background="@drawable/shape_of_inputedt"
+            android:textColorHint="#4A4747"
+            android:textColor="@color/black"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/txtinptlt21"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtinptlt1">
+
+        <EditText
+            android:id="@+id/edtpass1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Password"
+            android:paddingLeft="10sp"
+            android:paddingRight="10sp"
+            android:paddingTop="10sp"
+            android:paddingBottom="10sp"
+            android:textSize="20sp"
+            android:fontFamily="sans-serif-thin"
+            android:inputType="textPassword"
+            android:drawableLeft="@drawable/ic_lock"
+            android:drawableTint="@color/black"
+            android:drawablePadding="10dp"
+            android:background="@drawable/shape_of_inputedt"
+            android:textColorHint="#4A4747"
+            android:textColor="@color/black"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/txtinptlt3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtinptlt21">
+        <EditText
+            android:id="@+id/edtname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Name"
+            android:paddingLeft="10sp"
+            android:paddingRight="10sp"
+            android:paddingTop="10sp"
+            android:paddingBottom="10sp"
+            android:textSize="20sp"
+            android:fontFamily="sans-serif-thin"
+            android:inputType="text"
+            android:drawableLeft="@drawable/ic_person"
+            android:drawableTint="@color/black"
+            android:drawablePadding="10dp"
+            android:background="@drawable/shape_of_inputedt"
+            android:textColorHint="#4A4747"
+            android:textColor="@color/black"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/txtinptlt4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtinptlt3">
+
+        <EditText
+            android:id="@+id/edtsurname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Surname"
+            android:paddingLeft="10sp"
+            android:paddingRight="10sp"
+            android:paddingTop="10sp"
+            android:paddingBottom="10sp"
+            android:textSize="20sp"
+            android:fontFamily="sans-serif-thin"
+            android:inputType="text"
+            android:drawableLeft="@drawable/ic_person"
+            android:drawableTint="@color/black"
+            android:drawablePadding="10dp"
+            android:background="@drawable/shape_of_inputedt"
+            android:textColorHint="#4A4747"
+            android:textColor="@color/black"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/registerbtn"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:text="Register"
+        android:fontFamily="sans-serif-black"
+        android:textSize="25sp"
+        android:layout_centerInParent="true"
+        android:background="@drawable/shape_of_splashtext"
+        android:layout_below="@id/txtinptlt4"
+        android:layout_marginTop="50dp"
+        />
+</RelativeLayout>
